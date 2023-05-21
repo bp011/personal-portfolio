@@ -4,101 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Website</title>
+    <title>Portfolio</title>
 </head>
+
 <body>
 
   <nav class="mobile-menu">
     <label for="show-menu" class="show-menu"><span>Menu</span><div class="lines"></div></label>
       <input type="checkbox" id="show-menu">
-        <ul id="menu">
+        <ul id="menu" style="position: relative;">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
   </nav>
-
-    <!--<div class="topnav" id="myTopnav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html" class="active">Portfolio</a>
-        <a href="contact.html">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-    </div> -->
-
-    <div <!-- style="padding-left:16px"--> >
-        <h2 style="text-align: center;">Welcome!</h2>
-        <p style="text-align: center;">These are my sample shots! Please take a look! </p>
-    </div>
-
+  <section>
     <div>
-      <div class="carousel">
-        <ul class="slides">
-          <input type="radio" name="radio-buttons" id="img-1" checked />
-          <li class="slide-container">
-            <div class="slide-image">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Timisoara_-_Regional_Business_Centre.jpg">
-            </div>
-            <div class="carousel-controls">
-              <label for="img-3" class="prev-slide">
-                <span>&lsaquo;</span>
-              </label>
-              <label for="img-2" class="next-slide">
-                <span>&rsaquo;</span>
-              </label>
-            </div>
-          </li>
-          <input type="radio" name="radio-buttons" id="img-2" />
-          <li class="slide-container">
-            <div class="slide-image">
-              <img src="https://content.r9cdn.net/rimg/dimg/db/02/06b291e8-city-14912-171317ad83a.jpg?width=1750&height=1000&xhint=3040&yhint=2553&crop=true">
-            </div>
-            <div class="carousel-controls">
-              <label for="img-1" class="prev-slide">
-                <span>&lsaquo;</span>
-              </label>
-              <label for="img-3" class="next-slide">
-                <span>&rsaquo;</span>
-              </label>
-            </div>
-          </li>
-          <input type="radio" name="radio-buttons" id="img-3" />
-          <li class="slide-container">
-            <div class="slide-image">
-              <img src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg">
-            </div>
-            <div class="carousel-controls">
-              <label for="img-2" class="prev-slide">
-                <span>&lsaquo;</span>
-              </label>
-              <label for="img-1" class="next-slide">
-                <span>&rsaquo;</span>
-              </label>
-            </div>
-          </li>
-          <div class="carousel-dots">
-            <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
-            <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
-            <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
-          </div>
-        </ul>
-      </div>
+      <h1 class="portfolio_top">Portfolio</h1>
     </div>
+  </section>
+  <body>
+    <div class="container">
+        <div class="gallery">
+            <figure class="gallery__item gallery__item--1">
+                <img src="image/study.jpg" alt="Gallery image 1" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--2">
+                <img src="image/study.jpg" alt="Gallery image 2" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--3">
+                <img src="image/study.jpg" alt="Gallery image 3" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--4">
+                <img src="image/study.jpg" alt="Gallery image 4" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--5">
+                <img src="image/study.jpg" alt="Gallery image 5" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--6">
+                <img src="image/study.jpg" alt="Gallery image 6" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--7">
+              <img src="image/study.jpg" alt="Gallery image 7" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--8">
+              <img src="image/study.jpg" alt="Gallery image 8" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--9">
+              <img src="image/study.jpg" alt="Gallery image 9" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--10">
+              <img src="image/study.jpg" alt="Gallery image 10" class="gallery__img">
+            </figure>
+        </div>
+    </div>
+</body>
 
 
-   <!-- <main class="grid">
-        <img src="Images/1.jpg" alt="Sample photo">
-        <img src="Images/2.jpg" alt="Sample photo">
-        <img src="Images/3.jpg" alt="Sample photo">
-        <img src="Images/4.jpg" alt="Sample photo">
-        <img src="Images/5.jpg" alt="Sample photo">
-        <img src="Images/6.jpg" alt="Sample photo">
-    </main>-->
 
 
     <footer>
@@ -126,6 +92,6 @@
             }
           }
     </script>
-    
+   <script src="js/script.js"></script>
 </body>
 </html>
