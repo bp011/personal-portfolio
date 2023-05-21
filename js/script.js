@@ -1,23 +1,36 @@
+let year = document.querySelector("#year");
 
-//   $(document).ready(function(){
-//       $("#01").mouseover(function(){
-//           $("#01").show();
-//       });
-//       $("#01").mouseout(function(){
-//           $("#01").hide();
-//       });
-//   });
-
-// function bigImg(x) {
-//    x.style.height = "1000px";
-//    x.style.width = "1000px";
-// }
-
-// function normalImg(x) {
-//    x.style.height = "150px";
-//    x.style.width = "150px";
-// }
+$(document).ready(function () {
+year.innerText = new Date().getFullYear();
+}); 
 
 
-/*<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32"></img>*/
-  
+const form = document.querySelector('form');
+
+form.addEventListener('submit', (event) => {
+event.preventDefault(); // Prevents the default form submission behavior
+
+alert('Query Submitted');
+const formData = new FormData(event.target); // Get the form data
+
+// Log the form data to the console
+console.log('First Name:', formData.get('name'));
+console.log('Email:', formData.get('email'));
+console.log('Phone:', formData.get('phone'));
+console.log('Message:', formData.get('message'));
+
+// You can add your own code here to handle the form submission, such as sending it to a server using AJAX.
+});
+
+
+jQuery("input[type='text']").on("keyup", function () {
+    if (jQuery(this).val() != "" ) {
+        if (jQuery("#FullName").val() != '')
+        {
+            jQuery("#contact100-form-btn").removeAttr("disabled");
+        }
+    } else {
+        jQuery("#contact100-form-btn").attr("disabled", "disabled");
+    }
+});
+
