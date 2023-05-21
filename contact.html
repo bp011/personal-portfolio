@@ -16,6 +16,7 @@
   <!-- <link rel="stylesheet" href="css/main.css"> -->
 	<!-- <noscript><link rel="stylesheet" href="css/noscript.css" /></noscript> -->
   <title>Website</title>
+  <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
 </head>
 
 <body class="is-preload">
@@ -98,11 +99,11 @@
     <h2>Contact</h2>
     </span>
     <div class="wrap-input100 validate-input" data-validate="Please enter your name">
-    <input class="input100" type="text" name="name" placeholder="Full Name">
+    <input id="FullName" class="input100" type="text" name="name" placeholder="Full Name" required>
     <span class="focus-input100"></span>
     </div>
     <div class="wrap-input100 validate-input" data-validate="Please enter your email: e@a.x">
-    <input class="input100" type="text" name="email" placeholder="E-mail">
+    <input class="input100" type="email" name="email" required placeholder="E-mail">
     <span class="focus-input100"></span>
     </div>
     <div class="wrap-input100 validate-input" data-validate="Please enter your phone">
@@ -110,11 +111,11 @@
     <span class="focus-input100"></span>
     </div>
     <div class="wrap-input100 validate-input" data-validate="Please enter your message">
-    <textarea class="input100" name="message" placeholder="Your Message"></textarea>
+    <textarea class="input100" name="message" required placeholder="Your Message"></textarea>
     <span class="focus-input100"></span>
     </div>
     <div class="container-contact100-form-btn">
-    <button class="contact100-form-btn">
+    <button class="contact100-form-btn" disabled>
     <span>
     <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
     Send
@@ -147,10 +148,9 @@
 
   <footer>
 
-    <div class="footer"><span id="year">
-        
-      </span>
-      <!-- <span> Your Company Name. All rights reserved.</span> -->
+    <div class="footer"><span id="year"></span>
+      <span>.  Find me at</span>
+      <!-- <span id="year"> </span> -->
       <ul>
         <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
         <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
@@ -159,18 +159,8 @@
     </div>
   </footer>
 
-  <script>
-    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
-
 </body>
+
+<script src="js/script.js"></script>
 
 </html>

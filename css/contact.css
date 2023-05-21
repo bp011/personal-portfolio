@@ -4,7 +4,7 @@
   }
   
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-sherif;
     font-size: 16px;
     height: 100%;
   }
@@ -148,7 +148,7 @@ iframe {
 
 .contact100-form-title {
     display: block;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-sherif;
     font-size: 30px;
     color: #4973ff;
     line-height: 1.2;
@@ -238,7 +238,7 @@ textarea.input100 {
     height: 62px;
     background-color: transparent;
     border-radius: 31px;
-    font-family: Ubuntu-Bold;
+    font-family: 'Montserrat', sans-sherif;
     font-size: 16px;
     color: #fff;
     line-height: 1.2;
@@ -274,7 +274,7 @@ textarea.input100 {
     transition: all .4s
 }
 
-.contact100-form-btn:hover:after {
+.contact100-form-btn:hover:before {
     background-color: #618bff;
     width: calc(100% + 20px)
 }
@@ -300,7 +300,7 @@ textarea.input100 {
     transform: translateY(-50%);
     right: 10px;
     pointer-events: none;
-    font-family: Ubuntu-Bold;
+    font-family: 'Montserrat', sans-sherif;
     color: #c80000;
     font-size: 13px;
     line-height: 1.4;
