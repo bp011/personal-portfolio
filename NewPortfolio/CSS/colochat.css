@@ -1,0 +1,29 @@
+#colochat {
+    text-align: center;
+  }
+  
+  #colochat p {
+    text-align: left;
+  }
+  
+  .progress_images img {
+    margin: 10px;
+    width: 200px;
+    flex-grow: 1;
+  }
+  
+  #colochat .btn-blue, #colochat .btn-white, #evolution .btn-blue, #evolution .btn-white {
+    margin: 30px auto 0 auto;
+  }
+  
+  .see-more-btn {
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+  }
+  
+  #evolution-colo img:nth-of-type(1) { 
+    flex-grow: 0.4; 
+  }
+  
+  
