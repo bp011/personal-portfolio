@@ -1560,3 +1560,12 @@ section {
   background: #ffce3a;
   text-decoration: none;
 }
+
+.custom-texts {
+  text-align: left;
+  padding-top: 15px;
+}
+
+.custom-texts-paragraphs {
+  font-size: large !important; 
+}
