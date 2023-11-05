@@ -344,9 +344,14 @@ h6 {
 }
 
 #about_BP > .BP_image{
-  max-width: 65%;
+  max-width: 75%;
   display: block;
   margin: 0;
+  border-radius: 25px;
+}
+.about p {
+
+  font-size: large !important;
 }
 
 /* #about_BP > img:hover{
@@ -1023,7 +1028,7 @@ transition: none !important;
 .gallery {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw);
+  grid-template-rows: repeat(1, 5vw);
   grid-gap: 1.5rem; 
 }
 
@@ -1034,11 +1039,25 @@ transition: none !important;
   display: block; 
 }
 
-.gallery__item--1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
+.gallery__item--0 {
+  grid-column-start: 3;
+  grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 3;
+  /* margin-top: 10%;
+  margin-bottom: 10%; */
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
 
   /** Alternative Syntax **/
   /* grid-column: 1 / span 2;  */
@@ -1046,10 +1065,10 @@ transition: none !important;
 }
 
 .gallery__item--2 {
-  grid-column-start: 3;
-  grid-column-end: 5;
+  grid-column-start: 5;
+  grid-column-end: 9;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 5;
 
   /** Alternative Syntax **/
   /* grid-column: 3 / span 2;  */
@@ -1057,10 +1076,10 @@ transition: none !important;
 }
 
 .gallery__item--3 {
-  grid-column-start: 5;
+  grid-column-start: 3;
   grid-column-end: 7;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 9;
 
 
   /** Alternative Syntax **/
@@ -1070,8 +1089,8 @@ transition: none !important;
 
 .gallery__item--4 {
   grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
   grid-row-end: 5;
 
   /** Alternative Syntax **/
@@ -1080,9 +1099,9 @@ transition: none !important;
 }
 
 .gallery__item--5 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 3;
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
   grid-row-end: 5;
 
   /** Alternative Syntax **/
@@ -1091,20 +1110,20 @@ transition: none !important;
 }
 
 .gallery__item--6 {
-  grid-column-start: 5;
-  grid-column-end: 7;
-  grid-row-start: 3;
-  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 9;
 
   /** Alternative Syntax **/
   /* grid-column: 5 / span 4; */
   /* grid-row: 6 / span 3; */
 }
 .gallery__item--7 {
-    grid-column-start: 7;
+    grid-column-start: 5;
     grid-column-end: 9;
-    grid-row-start: 3;
-    grid-row-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 9;
   
     /** Alternative Syntax **/
     /* grid-column: 1 / span 4; */
@@ -1112,33 +1131,47 @@ transition: none !important;
   }
   
   .gallery__item--8 {
-    grid-column-start: 3;
+    grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  
+    /** Alternative Syntax **/
+    /* grid-column: 1 / span 4;  */
+    /* grid-row: 3 / span 3; */
+  }
+  
+  .gallery__item--9 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  
+    /** Alternative Syntax **/
+    /* grid-column: 1 / span 4; */
+    /* grid-row: 6 / span 3; */
+  }
+  
+  .gallery__item--10 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 5;
     grid-row-end: 9;
   
     /** Alternative Syntax **/
     /* grid-column: 5 / span 4; */
     /* grid-row: 6 / span 3; */
   }
-  .gallery__item--9 {
-    grid-column-start: 5;
-    grid-column-end: 7;
-    grid-row-start: 6;
-    grid-row-end: 9;
-    /** Alternative Syntax **/
-    /* grid-column: 5 / span 4; */
-    /* grid-row: 6 / span 3; */
-  }
-  .gallery__item--10 {
-    grid-column-start: 7;
-    grid-column-end: 9;
-    grid-row-start: 9;
-    grid-row-end: 12;
-    /** Alternative Syntax **/
-    /* grid-column: 5 / span 4; */
-    /* grid-row: 6 / span 3; */
-  }
+  .gallery__item--11 {
+      grid-column-start: 5;
+      grid-column-end: 9;
+      grid-row-start: 5;
+      grid-row-end: 9;
+    
+      /** Alternative Syntax **/
+      /* grid-column: 1 / span 4; */
+      /* grid-row: 6 / span 3; */
+    }
 
 
 /*--------------------------------------------------------------
@@ -1714,4 +1747,9 @@ transition: none !important;
 
 .custom-texts-paragraphs {
   font-size: large !important; 
+  color: #848484 !important;
+}
+
+.custom-texts-light{
+  font-size: large;
 }
